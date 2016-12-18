@@ -49,6 +49,7 @@ flash[:notice] = "加入本讨论版成功！"
 else
   flash[:warning] = "你已经是本讨论版的成员了！"
 end
+redirect_to group_path(@group)
 end
 
 def quit
